@@ -1,21 +1,48 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
   return (
-    <Navbar style={{ backgroundColor: '#D3B9F7' }} variant="light" expand="lg">
-      <Navbar.Brand as={Link} to="/">My Portfolio</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mx-auto d-flex justify-content-between" style={{ width: '80%' }}>
-          <Nav.Link as={Link} to="/about">About Me</Nav.Link>
-          <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-          <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <nav style={styles.navbar}>
+      <div className="container"> {/* Bootstrap container to align width */}
+        <ul style={styles.navList}>
+          <li><Link to="home" smooth={true} duration={500} style={styles.navLink}>Home</Link></li>
+          <li><Link to="about" smooth={true} duration={500} style={styles.navLink}>About Me</Link></li>
+          <li><Link to="education" smooth={true} duration={500} style={styles.navLink}>Education</Link></li>
+          <li><Link to="experience" smooth={true} duration={500} style={styles.navLink}>Experience</Link></li>
+          <li><Link to="expertise" smooth={true} duration={500} style={styles.navLink}>Expertise</Link></li>
+          <li><Link to="projects" smooth={true} duration={500} style={styles.navLink}>Projects</Link></li>
+          <li><Link to="contact" smooth={true} duration={500} style={styles.navLink}>Contact</Link></li>
+        </ul>
+      </div>
+    </nav>
   );
+};
+
+const styles = {
+  navbar: {
+    backgroundColor: '#001f3f', // Navy blue background
+    padding: '10px 0',
+    position: 'sticky',
+    top: 0,
+    zIndex: 1000,
+    width: '100%', // Full width
+  },
+  navList: {
+    listStyleType: 'none',
+    display: 'flex',
+    justifyContent: 'space-around',
+    margin: 0,
+    padding: 0,
+  },
+  navLink: {
+    color: '#ffffff', // White text color
+    textDecoration: 'none',
+    padding: '10px 20px',
+    fontSize: '18px',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease',
+  },
 };
 
 export default NavBar;
