@@ -1,48 +1,25 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { Navbar, Nav } from 'react-bootstrap'; // Import Bootstrap components
 
 const NavBar = () => {
   return (
-    <nav style={styles.navbar}>
-      <div className="container"> {/* Bootstrap container to align width */}
-        <ul style={styles.navList}>
-          <li><Link to="home" smooth={true} duration={500} style={styles.navLink}>Home</Link></li>
-          <li><Link to="about" smooth={true} duration={500} style={styles.navLink}>About Me</Link></li>
-          <li><Link to="education" smooth={true} duration={500} style={styles.navLink}>Education</Link></li>
-          <li><Link to="experience" smooth={true} duration={500} style={styles.navLink}>Experience</Link></li>
-          <li><Link to="expertise" smooth={true} duration={500} style={styles.navLink}>Expertise</Link></li>
-          <li><Link to="projects" smooth={true} duration={500} style={styles.navLink}>Projects</Link></li>
-          <li><Link to="contact" smooth={true} duration={500} style={styles.navLink}>Contact</Link></li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar className="custom-navbar" variant="dark" expand="lg" sticky="top">
+      <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mx-auto">
+          <Nav.Link as={Link} to="home" smooth={true} duration={500}>Home</Nav.Link>
+          <Nav.Link as={Link} to="about" smooth={true} duration={500}>About Me</Nav.Link>
+          <Nav.Link as={Link} to="education" smooth={true} duration={500}>Education</Nav.Link>
+          <Nav.Link as={Link} to="experience" smooth={true} duration={500}>Experience</Nav.Link>
+          <Nav.Link as={Link} to="expertise" smooth={true} duration={500}>Expertise</Nav.Link>
+          <Nav.Link as={Link} to="projects" smooth={true} duration={500}>Projects</Nav.Link>
+          <Nav.Link as={Link} to="contact" smooth={true} duration={500}>Contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
-};
-
-const styles = {
-  navbar: {
-    backgroundColor: '#001f3f', // Navy blue background
-    padding: '10px 0',
-    position: 'sticky',
-    top: 0,
-    zIndex: 1000,
-    width: '100%', // Full width
-  },
-  navList: {
-    listStyleType: 'none',
-    display: 'flex',
-    justifyContent: 'space-around',
-    margin: 0,
-    padding: 0,
-  },
-  navLink: {
-    color: '#ffffff', // White text color
-    textDecoration: 'none',
-    padding: '10px 20px',
-    fontSize: '18px',
-    cursor: 'pointer',
-    transition: 'background-color 0.3s ease',
-  },
 };
 
 export default NavBar;
