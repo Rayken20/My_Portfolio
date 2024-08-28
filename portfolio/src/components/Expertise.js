@@ -6,7 +6,7 @@ const Expertise = () => {
       <h1>My Expertise</h1> 
       <div style={{ marginBottom: '40px' }}>
         <h2>Frontend Development</h2>
-        <p>Skilled in HTML, CSS, JavaScript, and Bootstrap. Over a year of experience in building responsive and dynamic web applications using these technologies.</p>
+        <p>Skilled in HTML, CSS, JavaScript, and Bootstrap. Can build responsive and dynamic web applications using these technologies.</p>
       </div>
       <div style={{ marginBottom: '40px' }}>
         <h2>Backend Development</h2>

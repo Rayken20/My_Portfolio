@@ -2,19 +2,25 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <section id="about" style={{ backgroundColor: '#001f3f', color: '#ffffff' }}>
-      <div style={{ display: 'flex', alignItems: 'center', maxWidth: '1200px', margin: '0 auto' }}>
+    <section id="about" style={{ backgroundColor: '#001f3f', color: '#ffffff', padding: '20px' }}>
+      <div style={{ 
+        display: 'flex', 
+        alignItems: 'center', 
+        flexDirection: 'column',  
+        maxWidth: '1200px', 
+        margin: '0 auto' 
+      }}>
         <img 
           src="/images/profile.jpeg" 
           alt="Profile" 
           style={{ 
-            width: '300px',
-            height: '300px',
+            width: '150px',
+            height: '150px',
             borderRadius: '50%', 
-            marginRight: '20px'
+            marginBottom: '20px'  
           }} 
         />
-        <div>
+        <div style={{ textAlign: 'center' }}>  {/* Center text for smaller screens */}
           <h1>About Me</h1> 
           <p>
             Hello! I'm a junior web developer with a strong enthusiasm for technology and software development.<br />
