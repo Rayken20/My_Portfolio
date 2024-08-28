@@ -5,7 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap'; // Import Bootstrap components
 const NavBar = () => {
   return (
     <Navbar className="custom-navbar" variant="dark" expand="lg" sticky="top">
-      <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
+      <Navbar.Brand href="#home">Rachael Njoki</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
