@@ -66,7 +66,7 @@ const Projects = () => {
             title="Movie Ticketing Platform"
             details={[
               "Description: A movie ticketing platform where users can browse movies, theaters, pay for tickets, and book seats.",
-              "Technologies Used: JavaScript, React, PostgreSQL, Flask, Python",
+              "Technologies Used: JavaScript, React, SQLite, Flask, Python",
               <a href="https://movie-ticketing-reviewing-system-client.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#4CAF50' }}>View Platform</a>,
               <a href="https://github.com/Rayken20/movie-ticketing-reviewing-system-client" target="_blank" rel="noopener noreferrer" style={{ color: '#4CAF50' }}>View on GitHub</a>
             ]}
