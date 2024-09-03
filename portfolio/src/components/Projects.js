@@ -66,7 +66,7 @@ const Projects = () => {
             imageUrl="https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGhvdGVsfGVufDB8fDB8fHww"
           />
           <Card
-            title="Movie Download Platform"
+            title="Movie Platform"
             details={[
               "Description: A movie ticketing platform where users can browse movies, theaters, pay for tickets, and book seats.",
               "Technologies Used: JavaScript, React, SQLite, Flask, Python",
