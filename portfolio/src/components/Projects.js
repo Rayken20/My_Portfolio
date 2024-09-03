@@ -58,6 +58,7 @@ const Projects = () => {
             details={[
               "Description: A hotel website that allows clients to choose the menu and add ingredients they would like their meals to be prepared with.",
               "Technologies Used: JavaScript, React, PostgreSQL, Flask, Python",
+              <a href="https://the-raykens.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#4CAF50' }}>View Platform</a>,
               <a href="https://github.com/Rayken20/The_Raykens" target="_blank" rel="noopener noreferrer" style={{ color: '#4CAF50' }}>View on GitHub</a>
             ]}
             imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTL3CSiHSJLdUkQAEzfRTqXC1yKTruBBUY3A&s"
