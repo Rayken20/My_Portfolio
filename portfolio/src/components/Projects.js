@@ -27,9 +27,11 @@ const Card = ({ title, details, imageUrl }) => {
           src={imageUrl} 
           alt={title} 
           style={{
-            width: '300px',
-            height: '200px',
+            width: '100%',  // Make image take full width of its container
+            height: 'auto', // Maintain aspect ratio
+            maxWidth: '300px', // Cap maximum width
             borderRadius: '10px',
+            marginTop: '20px',
             marginLeft: '20px',
           }} 
         />
